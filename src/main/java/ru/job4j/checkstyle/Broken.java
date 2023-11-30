@@ -4,22 +4,24 @@ public class Broken {
     private String name;
     private String surname;
 
-    Broken() { }
+    private int sizeOfEmpty = 10;
 
-    void echo() { }
+    private String newValue = "";
 
-    void method(int a, int b, int c, int d, int e, int f, int g) {
+    public Broken() {
+
     }
 
-    void media(Object obj) {
+    public void echo() {
+
+    }
+
+    public void method(int a, int b, int c, int d, int e, int f, int g) {
+    }
+
+    public void media(Object obj) {
         if (obj != null) {
             System.out.println(obj);
         }
-
     }
-
-    public int sizeOfEmpty = 10;
-
-    public String newValue = "";
-
 }
