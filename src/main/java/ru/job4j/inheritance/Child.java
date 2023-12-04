@@ -5,6 +5,6 @@ public class Child extends Parent {
 
     public Child(String name, int age, String patronymic) {
         super(name, age);
-        this.patronymic = patronymic
+        this.patronymic = patronymic;
     }
 }
