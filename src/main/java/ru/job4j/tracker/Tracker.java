@@ -47,5 +47,5 @@ public class Tracker {
             }
         }
         return Arrays.copyOf(result, size);
-    };
+    }
 }
