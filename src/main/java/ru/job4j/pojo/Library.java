@@ -18,8 +18,10 @@ public class Library {
         lib[3] = temp;
 
         for (int i = 0; i < lib.length; i++) {
-            System.out.println("Название книги - " + lib[i].getName()
-                    + ", количество страниц - " + lib[i].getCountPage());
+            if (lib[i].getName() == "Clean code") {
+                System.out.println("Название книги - " + lib[i].getName()
+                        + ", количество страниц - " + lib[i].getCountPage());
+            }
         }
     }
 
