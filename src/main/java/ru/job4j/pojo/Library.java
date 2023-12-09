@@ -18,7 +18,7 @@ public class Library {
         lib[3] = temp;
 
         for (int i = 0; i < lib.length; i++) {
-            if (lib[i].getName() == "Clean code") {
+            if ("Clean code".equals(lib[i].getName())) {
                 System.out.println("Название книги - " + lib[i].getName()
                         + ", количество страниц - " + lib[i].getCountPage());
             }
