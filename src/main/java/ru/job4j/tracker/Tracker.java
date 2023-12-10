@@ -59,7 +59,6 @@ public class Tracker {
         int index = indexOf(id);
         boolean validate = index != -1;
         if (validate) {
-            Item[] source = items;
             System.arraycopy(items, index + 1, items, index, size - index - 1);
             items[size - 1] = null;
             size--;
