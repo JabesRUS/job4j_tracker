@@ -51,9 +51,8 @@ public class Tracker {
         if (validate) {
             item.setId(id);
             items[index] = item;
-            return true;
         }
-        return false;
+        return validate;
     }
 
     public void delete(int id) {
