@@ -30,12 +30,6 @@ public class Tracker {
     }
 
     public Item[] findAll() {
-        int size = 0;
-        for (int i = 0; i < this.items.length; i++) {
-            if (this.items[i] != null) {
-                size++;
-            }
-        }
         return Arrays.copyOf(items, size);
     }
 
@@ -43,7 +37,7 @@ public class Tracker {
         Item[] result = new Item[size];
         int count = 0;
         for (int i = 0; i < size; i++) {
-            if (this.items[i] != null && items[i].getName().equals(key)) {
+            if (items[i].getName().equals(key)) {
                 result[count] = items[i];
                 count++;
             }
