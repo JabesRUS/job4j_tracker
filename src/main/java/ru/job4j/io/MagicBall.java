@@ -7,14 +7,12 @@ public class MagicBall {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int answer = new Random().nextInt(3);
-        String res = "";
-        if (answer == 0) {
-            res = "Да";
-        } else if (answer == 1) {
-            res  = "Нет";
-        } else {
-            res  = "Может быть";
-        }
+        String res = switch (answer) {
+            case 0 -> "Да";
+            case 1 -> "Нет";
+            default -> "Может быть";
+        };
+
         System.out.print("Я великий Оракул. Что ты хочешь узнать? ");
         String question = input.nextLine();
         System.out.print(res);
