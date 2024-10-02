@@ -9,7 +9,7 @@ class StartUITest {
     @Test
     void whenAddItem() {
         String[] answers = {"Fix PC"};
-        Input input = new ConsoleInput();
+        Input input = new MockInput(answers);
         Tracker tracker = new Tracker();
         StartUI.createItem(input, tracker);
         Item created = tracker.findAll()[0];
